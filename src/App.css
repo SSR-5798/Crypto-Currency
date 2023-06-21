@@ -1,0 +1,473 @@
+
+:root{
+    --text-primary:#000;
+    --bgPrimary:#fff;
+   --bgSecondary: #F9F9F9;
+   --pink: #0071bd;
+   --light-blue: #e6f7ff;
+   --border: #d9d9d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(4, 122, 113);
+}
+
+a:hover{
+    color: var(--pink);
+}
+
+.app{
+    display: flex;
+    overflow: hidden;
+}
+
+.navbar{
+    flex: 0.2;
+}
+
+.main{
+    flex: 0.8;
+    width: 100%;  
+}
+
+.routes{
+    padding: 20px;
+}
+
+.nav-container{
+    position: fixed;
+    left: 0;
+    top:0;
+    height: 100vh;
+    width: fit-content;
+    background-color: rgb(0, 21, 41);
+}
+
+.logo-container{
+    background-color: #001529;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    border-bottom:3px solid #032b8a;
+}
+
+.logo a{
+   color: var(--pink);
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.menu-control-container{ 
+    font-size: 1.2rem;
+    background-color: var(--bgSecondary);
+    border: none ;
+}
+
+.btn-menu{
+    width:100%;
+    color:rgb(62, 28, 209);
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor:pointer;
+    background: transparent;
+    outline: none;
+    padding: 5px 10px;
+    margin: 8px 0px;
+    border-radius: 15px;
+    border: 2px solid var(--pink);
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 21, 41);
+  }
+
+  .btn-menu:hover{
+    background: #156ea8;
+  }
+
+  .btn-menu span{
+    font-size: 20px;
+  }
+
+  .btn-menu:hover span{
+    color:white;
+  }
+
+@media screen and (max-width:1300px){
+    .main{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1170px){
+    .main{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .main{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .app{
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .navbar{
+        flex: 1;
+    }
+
+    .main{
+        flex: 1;
+        margin-top: 90px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .nav-container{
+        height: fit-content;
+        position:fixed;
+        width: 100%;
+        z-index: 100;
+    }
+  
+    .menu-control-container{
+        display: block !important;
+    }
+
+    .ant-menu{
+        position: absolute;
+        right: 0px;
+    }
+    .home-title{
+        font-size: 1.4rem !important;
+    }
+    .show-more{
+        font-size: 1.3rem !important;
+    }
+}
+
+.coin-detail-container{
+   margin:30px;
+}
+
+.coin-detail-container .coin-name{
+    font-weight: 900;
+    color: var(--pink);
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+}
+
+.coin-detail-container p{
+    font-family: 'Flamenco', cursive;
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.stats-heading{
+    font-weight: 500;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    color: var(--pink);
+}
+
+.coin-detail-container .stats-p{
+    font-weight: 200;
+    font-family: 'Flamenco', cursive;
+    font-size: 1.3rem;
+    opacity:0.8;
+    letter-spacing: 1px;
+}
+
+.coin-stats{
+    min-height: 50px;
+    min-width: 500px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.coin-stats span{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.9px;
+}
+
+.coin-stats .coin-desc{
+    opacity: 0.8;
+    min-width: 70%;
+}
+
+.coin-stats .stats{
+    font-weight: 700;
+    color: aqua;
+}
+
+
+.coin-details-heading{
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--pink);
+}
+
+.coin-value-statistics-heading p{
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.coin-desc-link h2{
+    font-weight: 900;
+    color: var(--pink);
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+}
+
+.coin-desc-link p{
+    font-size: 1.3rem;
+    opacity: 0.8;
+    font-family: 'Bree Serif', serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.coin-desc-link .type{
+    text-transform: capitalize;
+}
+
+.coin-desc-link a{
+    color: var(--pink);
+    font-family: 'Bree Serif', serif;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 0.9px;
+}
+
+.coin-desc-link h3{
+    font-weight: 400;
+    font-family: "Libre Baskerville";
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    color: rgb(28, 221, 235);
+}
+
+.coin-desc{
+    flex: 0.5;
+}
+
+.coin-links{
+  padding: 0px 20px;
+  flex: 0.5;
+}
+
+.coin-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: 20px;
+}
+
+.link-name{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.coin-link a{
+    color: var(--pink);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.coin-link:hover, .coin-stats:hover{
+    background-color: black;
+}
+
+@media screen and (max-width:1000px){
+    .stats-container{
+        flex-direction: column;
+    }
+    .coin-desc-link{
+        flex-direction: column;
+    }
+    .stats-container h2{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .coin-links{
+        padding: 0px;
+    }
+    .coin-detail-container{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .heading{
+        margin-top: 20px;
+    }
+}
+
+.select-news{
+    margin:2rem auto;
+    width: 180px;
+}
+
+.news-container a{
+    color:white;
+  }
+
+.news-container .news-title{
+  margin: 0;
+  width: 70%;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.0075em;
+  font-family: 'Montserrat';
+}
+
+.news-container p{
+  margin: 15px 0;
+  font-family: 'Libre Baskerville';
+  font-size: 15px;
+  font-weight:300;
+  line-height: 2;
+}
+
+.news-container span{
+    margin: 15px 0;
+    font-family: 'Libre Baskerville';
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.chart-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: #0071bd;
+}
+
+.chart-title{
+    color: #0071bd;
+    font-family: 'Libre Baskerville';
+    font-size: 1.8rem;
+}
+
+.chart-heading-current-price{
+    color: #db0ee9;
+    font-family: "Bree Serif";
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.exchange{
+    font-family:"Flamenco"; 
+    font-size:1.4rem;
+    letter-spacing: 1px;
+}
+
+.exchange-num{
+    font-family:"Libre Baskerville"; 
+    font-size:1.2rem;
+    letter-spacing: 1px;
+}
+
+.exchange-coin-headings-style{
+    font-family: "Bree Serif";
+    opacity:0.9;
+    letter-spacing: 1.5px;
+    color: aquamarine;
+    font-size: 1.4rem;
+}
+
+.price-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.price-change{
+    font-weight: 900;
+}
+.current-price{
+    margin-top: 0px !important;
+    font-weight: 900 !important;
+}
+.home-heading-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 40px 0 30px;
+}
+.show-more{
+    margin-top: 0px !important;
+}
+.exchange-image{
+    margin: 0px 10px !important;
+}
+.search-crypto{
+    margin: 20px auto 30px auto;
+    width: 250px;
+}
+.crypto-card-container{
+    min-height: 65vh !important;
+}
+
+.crypto-card{
+    min-width: 300px;
+}
+
+.crypto-card:hover{
+    background-color: #000;
+}
+
+.crypto-card .card-heading{
+    font-family: "Libre Baskerville";
+    letter-spacing: 1px;
+    font-weight: 900;   
+    color: #b9ff0c;    
+}
+
+.crypto-card .crypto-image{
+    width:35px;
+}
+
+.crypto-card .card-key-info{
+    padding: 20px;
+    font-family: 'Bree Serif';
+    line-height: 2;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.select-timeperiod{
+    width: 200px !important;
+    margin-top: 20px !important;
+}
+
+.footer {
+    background-color: #001529;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
